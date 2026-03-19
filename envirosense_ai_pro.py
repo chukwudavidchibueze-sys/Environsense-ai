@@ -24,6 +24,12 @@ def classify_priority(issue_type, severity):
         return "Moderate"
     return "Normal"
 
+ if issue_type == "Dump Site" and severity == "High":
+        return "Urgent"
+    if severity == "Medium":
+        return "Moderate"
+    return "Normal"
+
 def ai_insight(issue_type, severity, description):
     text = description.lower()
     if "plastic" in text:
@@ -36,7 +42,9 @@ def ai_insight(issue_type, severity, description):
         return "AI insight: Immediate intervention recommended to reduce environmental risk."
     return "AI insight: Monitor and schedule community response."
 
-st.title("EnviroSense AI Pro 🌍")
+st.title("EnviroSense AI Pro: Environmental Intelligence for Safer and Cleaner Cities 🌍")
+st.markdown("<p style='font-size:12px;'>Built for environmental innovation in Nigeria</p>", unsafe_allow_html=True)
+
 tab1, tab2, tab3 = st.tabs(["Environmental Reports", "AI Dashboard", "Waste Marketplace"])
 
 with tab1:
