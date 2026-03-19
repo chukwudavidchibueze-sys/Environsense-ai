@@ -44,14 +44,14 @@ def ai_insight(issue_type, severity, description):
     return "AI insight: Monitor and schedule community response."
 
 st.title("EnviroSense AI Pro:🌍 ")
-st.markdown("<p style='font-size:14px; >Built for environmental Intelligence & innovation for Safer and Cleaner Cities in Nigeria</p>", unsafe_allow_html=True)
+st.caption("Built for environmental Intelligence & innovation for Safer and Cleaner Cities in Nigeria. ")
 
 tab1, tab2, tab3 = st.tabs(["Environmental Reports", "AI Dashboard", "Waste Marketplace"])
 
 with tab1:
     st.subheader("Submit Environmental Report")
     with st.form("report_form"):
-        issue_type = st.selectbox("Issue Type", ["Blocked Drainage", "Construction Waste"])
+        issue_type = st.selectbox("Issue Type", ["Blocked Drainage", "Construction Waste", "Dump Site"])
         location = st.text_input("Location")
         severity = st.selectbox("Severity", ["Low", "Medium", "High"])
         description = st.text_area("Description")
