@@ -24,12 +24,6 @@ def classify_priority(issue_type, severity):
         return "Moderate"
     return "Normal"
 
- if issue_type == "Dump Site" and severity == "High":
-        return "Urgent"
-    if severity == "Medium":
-        return "Moderate"
-    return "Normal"
-
 def ai_insight(issue_type, severity, description):
     text = description.lower()
     if "plastic" in text:
