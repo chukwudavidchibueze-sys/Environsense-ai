@@ -44,7 +44,7 @@ def ai_insight(issue_type, severity, description):
     return "AI insight: Monitor and schedule community response."
 
 st.title("EnviroSense AI Pro:🌍 ")
-st.caption("Built for environmental Intelligence & innovation for Safer and Cleaner Cities in Nigeria. ")
+st.caption("Built for environmental Intelligence & innovation for Safer and Cleaner Cities in Nigeria, and the World at large.")
 
 tab1, tab2, tab3 = st.tabs(["Environmental Reports", "AI Dashboard", "Waste Marketplace"])
 
