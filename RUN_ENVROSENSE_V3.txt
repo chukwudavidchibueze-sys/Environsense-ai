@@ -1,0 +1,17 @@
+EnviroSense AI Pro v3
+
+Run the app:
+
+1. Install dependencies
+pip install streamlit pandas
+
+2. Start the app
+streamlit run envirosense_ai_pro_v3.py
+
+Features:
+- Environmental issue reporting
+- AI flood risk scoring
+- Environmental insights engine
+- Searchable dashboard
+- CSV export
+- Waste material marketplace
