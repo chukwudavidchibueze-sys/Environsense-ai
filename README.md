@@ -1,2 +1,0 @@
-# Environsense-ai
-Environment sensing
